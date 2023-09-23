@@ -1,0 +1,263 @@
+body{
+    margin:0 auto;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    width: 1100px;
+    /* background-color: gray; */
+    background-image: url('https://omahapf.com/wp-content/uploads/2018/11/Personal-Training-Background.jpg');
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
+    
+    
+    
+   
+}
+header{
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    background-color:rgba(255, 255, 255, 0.9);
+    
+    margin-bottom: 100px;
+    margin-top: 100px;
+    border-radius: 10px;
+    
+
+}
+
+.header-logo{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left:  30px; ;
+   
+    
+}
+
+.header-logo img{
+    height: 270px;
+}
+.header-bar{
+    margin: 10px;
+    margin-right: 100px;
+}
+.header-bar a{
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: ghostwhite;
+    margin-right: 20px;
+}
+
+
+
+.top-wrapper{
+    
+    
+    width: 100%;
+    height: 400px;
+    background-color:rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 5%;
+    margin-bottom: 100px;
+    
+    
+}
+
+.contents{
+    
+    text-align:center;
+    margin:0 auto;
+    
+    
+}
+
+.main-title h1{
+    font-size: 60px;
+    padding: 10px;
+}
+
+.sub-message{
+    font-size: 25px;
+    padding: 20px;
+}
+    
+
+.registration {
+    text-align: center;
+    margin-top: 30px;
+}
+.registration a{
+    border: 2px solid black;
+    font-size: 35px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.contents-wrapper{
+    background-color:rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;;
+    margin-bottom: 100px;
+    
+}
+.contents-wrapper h2{
+    font-size: 50px;
+}
+
+.calculate-form{
+    border:2px solid black;
+    padding: 10px;
+}
+
+.calculate-form select {
+    border: 1px solid black;
+}
+
+.training-menu option{
+    border: 2px solid black;
+}
+
+.contact-form option{
+    border:1px solid gray;
+}
+
+.contents-wrapper h2{
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.contents-wrapper h3{
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.contents-wrapper p{
+    display: inline-block;
+    margin: 15px;
+}
+.contents-wrapper p input{
+    border: 1px solid gray;
+}
+
+
+
+
+.your-result{
+    
+    
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 50px;
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+.check-result{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.check-result h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.check-result h2 span{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.check-result a{
+    border: 1px solid black;
+    font-size: 24px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+
+
+.table{
+    width: 100%;
+    font-size: 24px;
+    /* background-color: white; */
+    border-radius: 10px;
+
+}
+
+.table th, 
+.table td{
+    border-bottom: 1px solid black;
+    padding: 20px;
+   
+}
+
+.advise{
+    display:flex;
+    justify-content: space-around;
+    height: 150px;
+    background-color:rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-bottom: 100px;
+   
+    
+}
+
+.model img{
+    height: 150px;
+    margin-left: 20px;
+}
+.message p{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.message span{
+    border-bottom: 2px solid black;
+}
+
+footer{
+    height: 150px;
+    background-color:rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    
+    margin-bottom: 100px;
+}
+.footer-contents{
+    display: flex;
+    justify-content: space-around;
+}
+
+.follow-me img     {
+    height: 70px;
+    margin-right: 20px;
+}
+.follow-me ul{
+    display: flex;
+    
+    align-items: flex-end;
+
+}
+.aboutus p{
+    display:flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 15px;
+
+}
+
+.contactus p{
+    display:flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 15px;
+}
+
