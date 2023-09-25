@@ -8,7 +8,10 @@
 <br>
 <img src="myphoto2.png">
 <br>
+
 ### ランキングページ
+ユーザーは全て架空の人物です。
+<img src="myphoto3.png">
 
 
 # 使用技術<br>
