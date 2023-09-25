@@ -47,14 +47,16 @@ $dead_record = UserLogic::rankingDead();
   
   
 
-  <h2>BIG3の1RM記録を更新する</h2><br>
+  <h2>BIG3の1RM記録を更新する</h2>
+  <p>*記録を更新した種目のみ下記の数値を偏子してください。</p>
+  
   <form action="record.php" method="post">
     <label>ベンチプレス</label>
-    <input type="text" name="bench"> kg <br>
+    <input type="text" name="bench" value="<?php echo $login_user['bench'];?>"> kg <br>
     <label>スクワット</label>
-    <input type="text" name="squat"> kg <br>
+    <input type="text" name="squat" value="<?php echo $login_user['squat'];?>">  kg <br>
     <label>デッドリフト</label>
-    <input type="text" name="dead"> kg <br>
+    <input type="text" name="dead" value="<?php echo $login_user['dead'];?>"> kg <br>
     <input type="hidden" name="id" value="<?php echo $login_user['id'] ?>">
     <input type="submit" name="submit" value="記録を登録する">
    
@@ -62,14 +64,18 @@ $dead_record = UserLogic::rankingDead();
 
 
 
-  <h2>現在のランキング(登録者　<?php echo $user_number["count(id)"] ; ?> 人中)</h2>
+  <h2>現在のあなたランキング(登録者　<?php echo $user_number["count(id)"] ; ?> 人中)</h2>
   <form action="mypage.php" method="post">
     <p>ベンチプレス   <?php echo $bench_record+1;   ?>位</p>
     <p>スクワット   <?php echo $squat_record+1;   ?>位</p>
     <p>デッドリフト   <?php echo $dead_record+1;   ?>位</p>
     
   </form>
+
+  <p><a href="ranking.php">部内ランキング表</a> </p>
   
+  
+  <br>
 
 
   <form action="logout.php" method="post">

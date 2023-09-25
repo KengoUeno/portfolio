@@ -311,7 +311,120 @@ class UserLogic{
                 }
             }
 
+
+            public static function rankingAll()
+            {
+              try{
+                      
+                $sql = 'SELECT * FROM users';
+        
+                  $stmt = connect() -> prepare($sql); 
+                  $stmt->execute();
+                  $count_number=$stmt->fetchAll();
+
+                } catch(\Exception $e) {
+                  echo $e; // エラーを出力
+                  echo 'エラーが発生しました';
+                }
+
+                foreach ($count_number as $i=>$number )
+                
+                
+                return $i+1 ;
+                
+                
+                
+             
+            }
+              
+                
+                
+                  
+                
+              
+
+            
+
+
+            // ベンチのランキングを取得する関数
+            public static function allBench() {
+
+              try{
+                //データをベンチの重い順で取得する
+                $sql = 'SELECT * FROM users ORDER BY bench desc';
+
+                $stmt = connect() -> prepare($sql); 
+                  $stmt->execute();
+                  //fetchallでデータを全て取得し$benchAll(配列）に代入
+                  $benchAll=$stmt->fetchAll();
+
+                  return $benchAll;
+
+                 
+        
+                } catch(\Exception $e) {
+                  echo $e; // エラーを出力
+                  echo 'エラーが発生しました';
+                }
+              }
+
+
+
+              // スクワットのランキングを取得する関数
+            public static function allSquat() {
+
+              try{
+                //データをスクワットの重い順で取得する
+                $sql = 'SELECT * FROM users ORDER BY squat desc';
+
+                $stmt = connect() -> prepare($sql); 
+                  $stmt->execute();
+                  //fetchallでデータを全て取得し$benchAll(配列）に代入
+                  $squatAll=$stmt->fetchAll();
+
+                  return $squatAll;
+
+                 
+        
+                } catch(\Exception $e) {
+                  echo $e; // エラーを出力
+                  echo 'エラーが発生しました';
+                }
+              }
+
+
+              // ベンチのランキングを取得する関数
+            public static function allDead() {
+
+              try{
+                //データをベンチの重い順で取得する
+                $sql = 'SELECT * FROM users ORDER BY dead desc';
+
+                $stmt = connect() -> prepare($sql); 
+                  $stmt->execute();
+                  //fetchallでデータを全て取得し$deadAll(配列）に代入
+                  $deadAll=$stmt->fetchAll();
+
+                  return $deadAll;
+
+                 
+        
+                } catch(\Exception $e) {
+                  echo $e; // エラーを出力
+                  echo 'エラーが発生しました';
+                }
+              }
+
+
+
+
+
+
+
+
+            }
+
             
  
 
-}
+

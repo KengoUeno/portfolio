@@ -139,6 +139,7 @@
                     <div class="rm-table">
 
                         <table class="table">
+                            <tbody>
                             <tr>
                                 <th>パワー（％）</th>
                                 <th>重量</th>
@@ -210,6 +211,8 @@
                             <tr>
                                 
                             </tr>
+
+                            </tbody>
 
 
                         </table>
