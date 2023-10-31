@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 require_once '../classes/UserLogic.php';
 
@@ -21,6 +21,7 @@ $index_dead = UserLogic::rankingAll();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,32 +29,33 @@ $index_dead = UserLogic::rankingAll();
     <title>ランキング表</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./style.css">
-    
+
 
 
 </head>
+
 <body>
-    
+
     <header>
-        
+
         <h1>現在のランキング</h1>
-        
+
     </header>
-    
-    <div class="goback"> 
-    <a href="mypage.php">マイページへ</a>
-    <a href="index.php">ホームへ</a>
+
+    <div class="goback">
+        <a href="mypage.php">マイページへ</a>
+        <a href="index.php">ホームへ</a>
     </div>
 
 
-<div class="your-result">
+    <div class="your-result">
 
-    <div class="ranking"> 
-        
+        <div class="ranking">
+
             <div class="rank">
                 <h2>ベンチプレス</h2>
                 <table>
-                    
+
                     <thead>
                         <tr>
                             <th>順位</th>
@@ -63,19 +65,19 @@ $index_dead = UserLogic::rankingAll();
                     </thead>
 
                     <tbody>
-                        <?php foreach ($benchAll as $benchRow): ?>
+                        <?php foreach ($benchAll as $benchRow) : ?>
                             <tr>
-                                <td><?php echo $index_bench++;?></td>
-                                <td><?php echo $benchRow['bench'];?> kg</td>
-                                <td ><?php echo $benchRow['name'];?></td>
+                                <td><?php echo $index_bench++; ?></td>
+                                <td><?php echo $benchRow['bench']; ?> kg</td>
+                                <td><?php echo $benchRow['name']; ?></td>
                             </tr>
-                        <?php endforeach ;?>
+                        <?php endforeach; ?>
                     </tbody>
 
                 </table>
             </div>
 
-            <div class="rank"> 
+            <div class="rank">
                 <h2>スクワット</h2>
                 <table>
 
@@ -88,13 +90,13 @@ $index_dead = UserLogic::rankingAll();
                     </thead>
 
                     <tbody>
-                        <?php foreach ($squatAll as $squatRow): ?>
+                        <?php foreach ($squatAll as $squatRow) : ?>
                             <tr>
-                                <td><?php echo $index_squat++;?></td>
-                                <td><?php echo $squatRow['squat'];?> kg </td>
-                                <td><?php echo $squatRow['name'];?></td>
+                                <td><?php echo $index_squat++; ?></td>
+                                <td><?php echo $squatRow['squat']; ?> kg </td>
+                                <td><?php echo $squatRow['name']; ?></td>
                             </tr>
-                        <?php endforeach ;?>
+                        <?php endforeach; ?>
                     </tbody>
 
                 </table>
@@ -113,21 +115,22 @@ $index_dead = UserLogic::rankingAll();
                     </thead>
 
                     <tbody>
-                        <?php foreach ($deadAll as $deadRow): ?>
+                        <?php foreach ($deadAll as $deadRow) : ?>
                             <tr>
-                                <td><?php echo $index_dead++;?></td> 
-                                <td><?php echo $deadRow['dead'];?> kg</td>
-                                <td><?php echo $deadRow['name'];?></td>
+                                <td><?php echo $index_dead++; ?></td>
+                                <td><?php echo $deadRow['dead']; ?> kg</td>
+                                <td><?php echo $deadRow['name']; ?></td>
                             </tr>
-                        <?php endforeach ;?>
+                        <?php endforeach; ?>
                     </tbody>
 
                 </table>
             </div>
-       
+
+        </div>
     </div>
-</div>
 
 
 </body>
+
 </html>
